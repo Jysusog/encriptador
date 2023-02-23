@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fuentes De Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Icono-->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <!--Iconos Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Encriptador De Texto</title>
+</head>
+<body>
+    <nav>
+        <h1>Jysus <span>Martinez</span></h1>
+        <a href="#"><img src="img/logo.svg" alt="Logo-Pagina"></a>
+    </nav>
+    <main>
+        <section class="entradas">
+            <textarea class="texto-de-entrada" cols="25" rows="5" placeholder="Escriba el texto a encriptar."></textarea>
+            <div class="info">
+                <i class="bi bi-info-circle-fill"></i><h6 class="informacion">Solo letras minusculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptar</button>
+            </div>
+        </section>
+        <section class="salidas">
+            <textarea class="mensaje" cols="35" rows="20"></textarea>
+            <div class="botones">
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+</body>
+<script src="funcionalidad.js"></script>
+</html>

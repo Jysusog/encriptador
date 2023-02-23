@@ -1,0 +1,120 @@
+/*Varibales*/
+:root{
+    --fuentePrimaria:'Open Sans', sans-serif;
+    --colorPrimario:#f3f3f3;
+    --colorSecundario:#ea2100;
+}
+
+/*Nav*/
+nav{
+    background-color: transparent;
+    height: 5rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+nav h1{
+    color: var(--colorPrimario);
+    font-family: var(--fuentePrimaria);
+    font-size: 1.5rem;
+    
+}
+nav span{
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrimaria);
+}
+nav img{
+    width: 3rem;
+    height: 3rem;
+}
+/*main*/
+main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.info{
+    color: var(--colorPrimario);
+    display: flex;
+    font-family: var(--fuentePrimaria);
+}
+.info i{
+    margin-right: 1rem;
+}
+.botones button{
+    color: #f3f3f3;
+    background-color: transparent;
+    font-family: var(--fuentePrimaria);
+    border: 2px solid var(--colorPrimario);
+    border-radius: 1rem;
+    padding: .6rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+.botones button:hover{
+    transform: scale(1.1);
+}
+/**/
+.entradas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 80vh;
+    
+}
+.texto-de-entrada{
+    border: none;
+    font-family: var(--fuentePrimaria);
+    font-size: 1.5rem;
+    color: var(--colorPrimario);
+    margin: .3rem;
+    margin-top: 9rem;
+    padding-top: 1rem;
+    text-transform: lowercase;
+    background: transparent;
+
+}
+
+::placeholder { color:var(--colorPrimario); }
+    .texto-de-entrada:focus {
+        outline: none;
+    }
+.botones{
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.salidas{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.mensaje {
+    background: transparent;
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    border: 1px solid var(--colorPrimario);
+    border-radius: 24px;
+    color: var(--colorPrimario);
+    margin-top: 3.5rem;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    font-family: var(--fuentePrimaria);
+}
+
+.mensaje:focus {
+    outline: none;
+}
