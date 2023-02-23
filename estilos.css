@@ -109,7 +109,9 @@ main{
     border: 1px solid var(--colorPrimario);
     border-radius: 24px;
     color: var(--colorPrimario);
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
+    width: 70%;
+    height: 15rem;
     padding: 2rem;
     background-size: cover;
     background-position: center;
@@ -217,7 +219,7 @@ footer p a{
     footer{
         right: 25%;
         left: 25%;
-        bottom: .3rem;
+        bottom: .5rem;
     }
     
 }
