@@ -36,6 +36,7 @@ main{
     background-size: cover;
     background-position: center;
     display: flex;
+    justify-content: center;
 }
 .info{
     color: var(--colorPrimario);
@@ -117,4 +118,104 @@ main{
 
 .mensaje:focus {
     outline: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: var(--colorPrimario);
+    background:transparent;
+    bottom: 1rem;
+    right: 35%;
+    left: 35%;
+}
+footer p{
+    font-family: var(--fuentePrimaria);
+}
+footer p a{
+    text-decoration: none;
+    color: var(--colorPrimario);
+}
+/*Responsivo para laptops*/
+@media screen and (max-width:1000px){
+    .mensaje{
+        width: 70%;
+        height: 15rem;
+        background-size: contain;
+    }
+    
+}
+@media screen and (max-width:850px){
+    .botones{
+        width: 70%;
+        font-size: .8rem;
+    }
+    .mensaje{
+        width: 90%;
+        height: 14rem;
+        margin-top: 3rem;
+        padding: .5rem;
+        text-align: center;
+    }
+    .texto-de-entrada{
+        font-size: 1rem;
+    }
+    .info{
+        font-size: .8rem;
+    }
+    footer p{
+        font-size: .75rem;
+    }
+}
+@media screen and (max-width:600px) {
+    main{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .entradas{
+        width: 100%;
+        height: 45vh;
+    }
+    .salidas{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .texto-de-entrada{
+        margin-top: 5rem;
+
+    }
+    .mensaje{
+        width: 40%;
+        height: 10rem;
+        margin-top: 3rem;
+        padding: .5rem;
+        text-align: center;
+    }
+    footer p{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width:485px) {
+    .mensaje{
+        font-size: .8rem;
+        height: 8rem;
+    }
+    .texto-de-entrada{
+        font-size: .8rem;
+    }
+    .info{
+        font-size: .8rem;
+    }
+    .botones{
+        font-size: .7rem;
+    }
+    footer p{
+        font-size: .55rem;
+    }
+    footer{
+        right: 25%;
+        left: 25%;
+    }
 }
