@@ -103,7 +103,7 @@ main{
 }
 .mensaje {
     background: transparent;
-    background-image: url("../img/logo.svg");
+    background-image: url("img/logo.svg");
     background-repeat: no-repeat;
     border: 1px solid var(--colorPrimario);
     border-radius: 24px;
