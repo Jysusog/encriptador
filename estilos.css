@@ -217,5 +217,7 @@ footer p a{
     footer{
         right: 25%;
         left: 25%;
+        bottom: .3rem;
     }
+    
 }
